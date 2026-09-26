@@ -294,7 +294,7 @@ export default function Home() {
             <div className="absolute inset-x-8 bottom-12 h-24 rounded-full bg-blue-500/10 blur-3xl" />
 
             <Image
-              src={asset("/images/stem-hero.webp")}
+              src={asset("/images/stem-hero.svg")}
               alt="将抽象数理概念转换成直观图像与真实情境的学习过程"
               width={1200}
               height={675}
@@ -427,7 +427,7 @@ export default function Home() {
               </div>
 
               <Image
-                src={asset("/images/stem-method.webp")}
+                src={asset("/images/stem-method.svg")}
                 alt="诊断、解释、应用与验证四阶段学习流程"
                 width={900}
                 height={675}
@@ -611,7 +611,7 @@ export default function Home() {
                 <div className="relative p-4 lg:p-6">
                   <div className="absolute inset-10 rounded-full bg-cyan-300/10 blur-3xl" />
                   <Image
-                    src={asset("/images/stem-physics.webp")}
+                    src={asset("/images/stem-physics.svg")}
                     alt="以推动箱子、运动轨迹、电流流动与水波解释物理概念"
                     width={900}
                     height={675}
@@ -627,7 +627,7 @@ export default function Home() {
                 <div className="relative order-2 p-4 lg:order-1 lg:p-6">
                   <div className="absolute inset-10 rounded-full bg-blue-400/10 blur-3xl" />
                   <Image
-                    src={asset("/images/stem-chemistry.webp")}
+                    src={asset("/images/stem-chemistry.svg")}
                     alt="以原子结构、分子键结、化学反应、酸碱与摩尔概念解释化学"
                     width={900}
                     height={675}

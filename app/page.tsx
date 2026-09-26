@@ -133,6 +133,11 @@ const notSuitableFor = [
 const inputStyle =
   "mt-2 w-full rounded-2xl border border-white/10 bg-slate-950/70 px-4 py-3.5 text-white outline-none transition placeholder:text-slate-600 focus:border-cyan-300/60 focus:ring-2 focus:ring-cyan-300/10";
 
+const asset = (path: string) =>
+  process.env.NODE_ENV === "production"
+    ? `/stem-concept-clinic${path}`
+    : path;
+
 export default function Home() {
   function handleBooking(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -191,19 +196,9 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
       {/* HERO */}
-      <section className="relative isolate min-h-screen overflow-hidden">
-        <Image
-          src="/images/hero-confused-student.png"
-          alt="一名学生看着考卷，尝试理解困难的数理概念"
-          fill
-          priority
-          className="object-cover object-[68%_center]"
-          sizes="100vw"
-        />
-
-        <div className="absolute inset-0 bg-slate-950/20" />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-950/5" />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-950/40" />
+      <section className="relative isolate min-h-screen overflow-hidden bg-slate-950">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_35%,rgba(34,211,238,0.13),transparent_32%),radial-gradient(circle_at_20%_15%,rgba(59,130,246,0.08),transparent_28%)]" />
+        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-300/40 to-transparent" />
 
         <nav className="relative z-20 mx-auto flex max-w-7xl items-center justify-between px-6 py-7 lg:px-10">
           <a href="#" className="flex items-center gap-3">
@@ -242,31 +237,30 @@ export default function Home() {
 
           <a
             href="#booking"
-            className="rounded-full border border-white/25 bg-white/10 px-5 py-2.5 text-sm font-semibold backdrop-blur-md transition hover:bg-white hover:text-slate-950"
+            className="rounded-full border border-white/20 bg-white/[0.06] px-5 py-2.5 text-sm font-semibold backdrop-blur-md transition hover:border-cyan-300/50 hover:bg-cyan-300 hover:text-slate-950"
           >
             预约诊断
           </a>
         </nav>
 
-        <div className="relative z-10 mx-auto flex min-h-[calc(100vh-104px)] max-w-7xl items-center px-6 pb-20 lg:px-10">
-          <div className="max-w-3xl py-16">
-            <div className="mb-7 inline-flex items-center gap-3 rounded-full border border-cyan-300/25 bg-cyan-300/10 px-4 py-2 text-sm font-medium text-cyan-300 backdrop-blur-md">
+        <div className="relative z-10 mx-auto grid min-h-[calc(100vh-104px)] max-w-7xl items-center gap-12 px-6 pb-20 pt-8 lg:grid-cols-[0.88fr_1.12fr] lg:px-10 lg:pt-0">
+          <div className="py-10 lg:py-16">
+            <div className="mb-7 inline-flex items-center gap-3 rounded-full border border-cyan-300/20 bg-cyan-300/[0.08] px-4 py-2 text-sm font-medium text-cyan-300 backdrop-blur-md">
               <Globe2 size={16} aria-hidden="true" />
               面向全球华人的线上数理概念诊断
             </div>
 
-            <h1 className="text-5xl font-bold leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl">
-              你不是不会，
-              <span className="mt-2 block text-cyan-300">
-                只是概念还没有打稳。
+            <h1 className="max-w-3xl text-5xl font-bold leading-[1.08] sm:text-6xl lg:text-7xl">
+              不是把公式背下来，
+              <span className="mt-3 block text-cyan-300">
+                而是把概念真正看懂。
               </span>
             </h1>
 
             <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
-              不受国家、考试或课程体系限制。
-              针对数学、物理和化学中真正卡住你的概念，
-              通过诊断、直观讲解与针对性练习，
-              帮你从根本弄清楚。
+              把抽象的数学、物理和化学概念，
+              转换成图像、关系、类比与真实情境。
+              先找出理解断点，再重新建立可以使用的概念模型。
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -279,9 +273,9 @@ export default function Home() {
 
               <a
                 href="#method"
-                className="rounded-full border border-white/20 bg-white/5 px-7 py-4 text-center font-semibold backdrop-blur-md transition hover:bg-white/10"
+                className="rounded-full border border-white/15 bg-white/[0.04] px-7 py-4 text-center font-semibold transition hover:border-cyan-300/30 hover:bg-white/[0.08]"
               >
-                了解辅导方式
+                看概念如何被拆开
               </a>
             </div>
 
@@ -294,10 +288,25 @@ export default function Home() {
               <span>全球线上</span>
             </div>
           </div>
+
+          <div className="relative flex min-h-[430px] items-center justify-center lg:min-h-[620px]">
+            <div className="absolute h-[72%] w-[72%] rounded-full bg-cyan-300/10 blur-3xl" />
+            <div className="absolute inset-x-8 bottom-12 h-24 rounded-full bg-blue-500/10 blur-3xl" />
+
+            <Image
+              src={asset("/images/stem-hero.webp")}
+              alt="将抽象数理概念转换成直观图像与真实情境的学习过程"
+              width={1200}
+              height={675}
+              priority
+              className="relative z-10 h-auto w-full max-w-[760px] drop-shadow-[0_30px_60px_rgba(0,0,0,0.35)]"
+              sizes="(max-width: 1024px) 100vw, 58vw"
+            />
+          </div>
         </div>
 
-        <div className="absolute bottom-7 left-1/2 z-20 hidden -translate-x-1/2 text-center text-xs text-slate-400 md:block">
-          <span>向下了解你的问题为什么一直没有解决</span>
+        <div className="absolute bottom-7 left-1/2 z-20 hidden -translate-x-1/2 text-center text-xs text-slate-500 md:block">
+          <span>从理解断点开始，而不是从整章重来</span>
           <div className="mx-auto mt-2 h-8 w-px bg-gradient-to-b from-cyan-300 to-transparent" />
         </div>
       </section>
@@ -400,6 +409,32 @@ export default function Home() {
               我们不会直接重教整章，而是根据实际问题，
               找出最需要修复的概念环节。
             </p>
+          </div>
+
+          <div className="mt-14 overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950/60 p-3 shadow-2xl shadow-black/20 sm:p-5">
+            <div className="grid items-center gap-8 lg:grid-cols-[0.72fr_1.28fr]">
+              <div className="px-5 py-6 sm:px-7">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
+                  从混乱到掌握
+                </p>
+                <h3 className="mt-4 text-2xl font-bold sm:text-3xl">
+                  诊断不是考试，而是找到概念在哪一层断开。
+                </h3>
+                <p className="mt-4 leading-7 text-slate-400">
+                  先定位问题，再用视觉化和类比重建理解，
+                  接着用针对性练习验证，最后让学生自己解释回来。
+                </p>
+              </div>
+
+              <Image
+                src={asset("/images/stem-method.webp")}
+                alt="诊断、解释、应用与验证四阶段学习流程"
+                width={900}
+                height={675}
+                className="h-auto w-full rounded-2xl"
+                sizes="(max-width: 1024px) 100vw, 62vw"
+              />
+            </div>
           </div>
 
           <div className="relative mt-20">
@@ -548,6 +583,80 @@ export default function Home() {
                 </article>
               );
             })}
+          </div>
+
+          <div className="mt-20 space-y-8">
+            <article className="overflow-hidden rounded-[2rem] border border-cyan-300/15 bg-slate-900/70">
+              <div className="grid items-center gap-4 lg:grid-cols-[0.78fr_1.22fr]">
+                <div className="p-8 lg:p-10">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
+                    物理不是公式表
+                  </p>
+                  <h3 className="mt-4 text-3xl font-bold">
+                    把抽象关系变成可以看见的运动、流动与变化。
+                  </h3>
+                  <p className="mt-5 leading-8 text-slate-400">
+                    例如把力理解成推动物体后的运动变化，把电流类比成管道中的流动，
+                    再把速度、加速度和波动放回真实的空间与时间关系中。
+                  </p>
+                  <div className="mt-7 flex flex-wrap gap-2 text-sm text-slate-300">
+                    {["力与运动", "速度与加速度", "电流与电势", "波与频率"].map((item) => (
+                      <span key={item} className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2">
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="relative p-4 lg:p-6">
+                  <div className="absolute inset-10 rounded-full bg-cyan-300/10 blur-3xl" />
+                  <Image
+                    src={asset("/images/stem-physics.webp")}
+                    alt="以推动箱子、运动轨迹、电流流动与水波解释物理概念"
+                    width={900}
+                    height={675}
+                    className="relative h-auto w-full"
+                    sizes="(max-width: 1024px) 100vw, 62vw"
+                  />
+                </div>
+              </div>
+            </article>
+
+            <article className="overflow-hidden rounded-[2rem] border border-blue-300/15 bg-slate-900/70">
+              <div className="grid items-center gap-4 lg:grid-cols-[1.22fr_0.78fr]">
+                <div className="relative order-2 p-4 lg:order-1 lg:p-6">
+                  <div className="absolute inset-10 rounded-full bg-blue-400/10 blur-3xl" />
+                  <Image
+                    src={asset("/images/stem-chemistry.webp")}
+                    alt="以原子结构、分子键结、化学反应、酸碱与摩尔概念解释化学"
+                    width={900}
+                    height={675}
+                    className="relative h-auto w-full"
+                    sizes="(max-width: 1024px) 100vw, 62vw"
+                  />
+                </div>
+
+                <div className="order-1 p-8 lg:order-2 lg:p-10">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
+                    化学需要模型，不只是符号
+                  </p>
+                  <h3 className="mt-4 text-3xl font-bold">
+                    先看懂粒子之间发生了什么，再处理方程式。
+                  </h3>
+                  <p className="mt-5 leading-8 text-slate-400">
+                    原子、键结、反应、酸碱和摩尔概念如果只剩下符号，很容易变成死记。
+                    视觉模型能先建立结构，再把数学与化学式放回那个结构里。
+                  </p>
+                  <div className="mt-7 flex flex-wrap gap-2 text-sm text-slate-300">
+                    {["原子结构", "化学键", "反应过程", "酸碱与摩尔"].map((item) => (
+                      <span key={item} className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2">
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
 
           <div className="mt-20 grid gap-6 lg:grid-cols-2">

@@ -86,7 +86,10 @@ const notSuitableFor = [
   "希望一节课保证成绩立即大幅提升",
 ];
 
-const asset = (path: string) =>\n  process.env.NODE_ENV === "production" ? `/stem-concept-clinic${path}` : path;\n\nconst inputStyle =
+const asset = (path: string) =>
+  process.env.NODE_ENV === "production" ? `/stem-concept-clinic${path}` : path;
+
+const inputStyle =
   "mt-2 w-full rounded-2xl border border-white/10 bg-slate-950/70 px-4 py-3.5 text-white outline-none transition placeholder:text-slate-600 focus:border-cyan-300/60 focus:ring-2 focus:ring-cyan-300/10";
 
 export default function Home() {

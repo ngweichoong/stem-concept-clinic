@@ -3,7 +3,6 @@
 import Image from "next/image";
 import {
   Atom,
-  BadgeCheck,
   Calculator,
   Check,
   Clock3,
@@ -11,10 +10,7 @@ import {
   Globe2,
   GraduationCap,
   Languages,
-  Lightbulb,
   Mail,
-  PencilRuler,
-  ScanSearch,
   Sigma,
   Sparkles,
   Upload,
@@ -46,45 +42,6 @@ const problems = [
     title: "不知道自己哪里不懂",
     description:
       "只知道问题不会处理，却无法指出真正缺失的是定义、逻辑还是数学基础。",
-  },
-];
-
-const methodSteps = [
-  {
-    number: "01",
-    english: "DIAGNOSE",
-    title: "诊断问题",
-    description:
-      "学生提交问题并解释自己的想法，我们判断问题来自定义、逻辑、数学基础还是应用方式。",
-    icon: ScanSearch,
-    highlight: false,
-  },
-  {
-    number: "02",
-    english: "EXPLAIN",
-    title: "重建理解",
-    description:
-      "使用图像、类比、推导和实际例子，把抽象概念连接到学生已经掌握的知识。",
-    icon: Lightbulb,
-    highlight: false,
-  },
-  {
-    number: "03",
-    english: "APPLY",
-    title: "针对性练习",
-    description:
-      "不进行无目的刷题，只选择能够检验该概念是否真正掌握的代表性问题。",
-    icon: PencilRuler,
-    highlight: false,
-  },
-  {
-    number: "04",
-    english: "VERIFY",
-    title: "掌握检查",
-    description:
-      "学生用自己的话解释概念，并独立处理新的问题，确认不是暂时听懂。",
-    icon: BadgeCheck,
-    highlight: true,
   },
 ];
 
@@ -251,16 +208,16 @@ export default function Home() {
             </div>
 
             <h1 className="max-w-3xl text-5xl font-bold leading-[1.08] sm:text-6xl lg:text-7xl">
-              不是把公式背下来，
+              把抽象概念，
               <span className="mt-3 block text-cyan-300">
-                而是把概念真正看懂。
+                变成真正看得懂的知识。
               </span>
             </h1>
 
             <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
-              把抽象的数学、物理和化学概念，
-              转换成图像、关系、类比与真实情境。
-              先找出理解断点，再重新建立可以使用的概念模型。
+              数学、物理与化学，不只是公式和符号。
+              通过图像、关系、类比与实际情境，把复杂概念一步一步拆开，
+              让你真正理解它为什么成立、什么时候使用。
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -294,12 +251,12 @@ export default function Home() {
             <div className="absolute inset-x-8 bottom-12 h-24 rounded-full bg-blue-500/10 blur-3xl" />
 
             <Image
-              src={asset("/images/stem-hero.svg")}
-              alt="将抽象数理概念转换成直观图像与真实情境的学习过程"
-              width={1200}
-              height={675}
+              src={asset("/images/hero-main.jpg")}
+              alt="抽象的数学、物理与化学符号逐步转化为清晰的视觉概念"
+              width={1024}
+              height={559}
               priority
-              className="relative z-10 h-auto w-full max-w-[760px] drop-shadow-[0_30px_60px_rgba(0,0,0,0.35)]"
+              className="relative z-10 h-auto w-full max-w-[780px] rounded-[2rem] border border-white/10 shadow-2xl shadow-black/40"
               sizes="(max-width: 1024px) 100vw, 58vw"
             />
           </div>
@@ -398,101 +355,33 @@ export default function Home() {
             </p>
 
             <h2 className="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">
-              不急着给答案，
+              不是直接给答案，
               <span className="block text-slate-400">
-                先找出理解在哪一步断掉。
+                而是一步一步修复理解。
               </span>
             </h2>
 
             <p className="mx-auto mt-7 max-w-2xl text-lg leading-8 text-slate-400">
-              每一次辅导都从学生目前的理解开始。
-              我们不会直接重教整章，而是根据实际问题，
-              找出最需要修复的概念环节。
+              先找出真正的知识断点，再重新建立概念、应用到代表性问题，
+              最后确认学生能够独立理解与解决。
             </p>
           </div>
 
-          <div className="mt-14 overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950/60 p-3 shadow-2xl shadow-black/20 sm:p-5">
-            <div className="grid items-center gap-8 lg:grid-cols-[0.72fr_1.28fr]">
-              <div className="px-5 py-6 sm:px-7">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-                  从混乱到掌握
-                </p>
-                <h3 className="mt-4 text-2xl font-bold sm:text-3xl">
-                  诊断不是考试，而是找到概念在哪一层断开。
-                </h3>
-                <p className="mt-4 leading-7 text-slate-400">
-                  先定位问题，再用视觉化和类比重建理解，
-                  接着用针对性练习验证，最后让学生自己解释回来。
-                </p>
-              </div>
+          <figure className="mt-14 overflow-hidden rounded-[2rem] border border-white/10 bg-white p-2 shadow-2xl shadow-black/25 sm:p-3">
+            <Image
+              src={asset("/images/method-workflow.jpg")}
+              alt="Diagnose、Explain、Apply、Verify 四阶段概念学习流程"
+              width={1024}
+              height={559}
+              className="h-auto w-full rounded-[1.5rem]"
+              sizes="(max-width: 1280px) 100vw, 1200px"
+            />
+          </figure>
 
-              <Image
-                src={asset("/images/stem-method.svg")}
-                alt="诊断、解释、应用与验证四阶段学习流程"
-                width={900}
-                height={675}
-                className="h-auto w-full rounded-2xl"
-                sizes="(max-width: 1024px) 100vw, 62vw"
-              />
-            </div>
-          </div>
-
-          <div className="relative mt-20">
-            <div className="absolute left-0 right-0 top-10 hidden h-px bg-gradient-to-r from-transparent via-cyan-300/40 to-transparent lg:block" />
-
-            <div className="relative grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-              {methodSteps.map((step) => {
-                const Icon = step.icon;
-
-                return (
-                  <article
-                    key={step.number}
-                    className={
-                      step.highlight
-                        ? "rounded-3xl border border-cyan-300/30 bg-cyan-300/[0.08] p-7 backdrop-blur"
-                        : "rounded-3xl border border-white/10 bg-slate-950/70 p-7 backdrop-blur"
-                    }
-                  >
-                    <div
-                      className={
-                        step.highlight
-                          ? "relative flex h-20 w-20 items-center justify-center rounded-2xl bg-cyan-300 text-slate-950 shadow-lg shadow-cyan-300/20"
-                          : "relative flex h-20 w-20 items-center justify-center rounded-2xl border border-cyan-300/30 bg-cyan-300/10 text-cyan-300"
-                      }
-                    >
-                      <Icon
-                        size={step.highlight ? 38 : 36}
-                        strokeWidth={1.8}
-                        aria-hidden="true"
-                      />
-
-                      <span
-                        className={
-                          step.highlight
-                            ? "absolute -right-2 -top-2 rounded-full bg-white px-2 py-1 text-[10px] font-bold text-slate-950"
-                            : "absolute -right-2 -top-2 rounded-full bg-slate-700 px-2 py-1 text-[10px] font-bold text-white"
-                        }
-                      >
-                        {step.number}
-                      </span>
-                    </div>
-
-                    <p className="mt-8 text-sm font-semibold text-cyan-300">
-                      {step.english}
-                    </p>
-
-                    <h3 className="mt-2 text-2xl font-bold">
-                      {step.title}
-                    </h3>
-
-                    <p className="mt-4 leading-7 text-slate-400">
-                      {step.description}
-                    </p>
-                  </article>
-                );
-              })}
-            </div>
-          </div>
+          <p className="mx-auto mt-6 max-w-3xl text-center text-sm leading-7 text-slate-500">
+            通过 Diagnose → Explain → Apply → Verify 四个步骤，
+            把抽象概念转化为真正能够独立使用的理解。
+          </p>
 
           <div className="mt-16 grid gap-6 rounded-3xl border border-white/10 bg-white/[0.04] p-8 lg:grid-cols-[1fr_auto] lg:items-center lg:p-10">
             <div>
@@ -583,80 +472,6 @@ export default function Home() {
                 </article>
               );
             })}
-          </div>
-
-          <div className="mt-20 space-y-8">
-            <article className="overflow-hidden rounded-[2rem] border border-cyan-300/15 bg-slate-900/70">
-              <div className="grid items-center gap-4 lg:grid-cols-[0.78fr_1.22fr]">
-                <div className="p-8 lg:p-10">
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-                    物理不是公式表
-                  </p>
-                  <h3 className="mt-4 text-3xl font-bold">
-                    把抽象关系变成可以看见的运动、流动与变化。
-                  </h3>
-                  <p className="mt-5 leading-8 text-slate-400">
-                    例如把力理解成推动物体后的运动变化，把电流类比成管道中的流动，
-                    再把速度、加速度和波动放回真实的空间与时间关系中。
-                  </p>
-                  <div className="mt-7 flex flex-wrap gap-2 text-sm text-slate-300">
-                    {["力与运动", "速度与加速度", "电流与电势", "波与频率"].map((item) => (
-                      <span key={item} className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2">
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="relative p-4 lg:p-6">
-                  <div className="absolute inset-10 rounded-full bg-cyan-300/10 blur-3xl" />
-                  <Image
-                    src={asset("/images/stem-physics.svg")}
-                    alt="以推动箱子、运动轨迹、电流流动与水波解释物理概念"
-                    width={900}
-                    height={675}
-                    className="relative h-auto w-full"
-                    sizes="(max-width: 1024px) 100vw, 62vw"
-                  />
-                </div>
-              </div>
-            </article>
-
-            <article className="overflow-hidden rounded-[2rem] border border-blue-300/15 bg-slate-900/70">
-              <div className="grid items-center gap-4 lg:grid-cols-[1.22fr_0.78fr]">
-                <div className="relative order-2 p-4 lg:order-1 lg:p-6">
-                  <div className="absolute inset-10 rounded-full bg-blue-400/10 blur-3xl" />
-                  <Image
-                    src={asset("/images/stem-chemistry.svg")}
-                    alt="以原子结构、分子键结、化学反应、酸碱与摩尔概念解释化学"
-                    width={900}
-                    height={675}
-                    className="relative h-auto w-full"
-                    sizes="(max-width: 1024px) 100vw, 62vw"
-                  />
-                </div>
-
-                <div className="order-1 p-8 lg:order-2 lg:p-10">
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-                    化学需要模型，不只是符号
-                  </p>
-                  <h3 className="mt-4 text-3xl font-bold">
-                    先看懂粒子之间发生了什么，再处理方程式。
-                  </h3>
-                  <p className="mt-5 leading-8 text-slate-400">
-                    原子、键结、反应、酸碱和摩尔概念如果只剩下符号，很容易变成死记。
-                    视觉模型能先建立结构，再把数学与化学式放回那个结构里。
-                  </p>
-                  <div className="mt-7 flex flex-wrap gap-2 text-sm text-slate-300">
-                    {["原子结构", "化学键", "反应过程", "酸碱与摩尔"].map((item) => (
-                      <span key={item} className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2">
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </article>
           </div>
 
           <div className="mt-20 grid gap-6 lg:grid-cols-2">

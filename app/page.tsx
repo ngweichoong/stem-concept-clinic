@@ -16,7 +16,7 @@ import {
   X,
 } from "lucide-react";
 import type { FormEvent } from "react";
-import { heroImage, methodImage } from "./image-data";
+import { methodImage } from "./image-data";
 
 const problems = [
   {
@@ -87,7 +87,7 @@ const notSuitableFor = [
   "希望一节课保证成绩立即大幅提升",
 ];
 
-const inputStyle =
+const asset = (path: string) =>\n  process.env.NODE_ENV === "production" ? `/stem-concept-clinic${path}` : path;\n\nconst inputStyle =
   "mt-2 w-full rounded-2xl border border-white/10 bg-slate-950/70 px-4 py-3.5 text-white outline-none transition placeholder:text-slate-600 focus:border-cyan-300/60 focus:ring-2 focus:ring-cyan-300/10";
 
 export default function Home() {
@@ -246,7 +246,7 @@ export default function Home() {
             <div className="absolute inset-x-8 bottom-12 h-24 rounded-full bg-blue-500/10 blur-3xl" />
 
             <img
-              src={heroImage}
+              src={asset("/images/hero-final.webp")}
               alt="抽象的数学、物理与化学符号逐步转化为清晰的视觉概念"
               width={960}
               height={524}

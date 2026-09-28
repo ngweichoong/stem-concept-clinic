@@ -16,7 +16,6 @@ import {
   X,
 } from "lucide-react";
 import type { FormEvent } from "react";
-import { methodImage } from "./image-data";
 
 const problems = [
   {
@@ -362,7 +361,7 @@ export default function Home() {
 
           <figure className="mt-14 overflow-hidden rounded-[2rem] border border-white/10 bg-white p-2 shadow-2xl shadow-black/25 sm:p-3">
             <img
-              src={methodImage}
+              src={asset("/images/method-final.webp")}
               alt="Diagnose、Explain、Apply、Verify 四阶段概念学习流程"
               width={960}
               height={524}

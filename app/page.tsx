@@ -251,10 +251,10 @@ export default function Home() {
             <div className="absolute inset-x-8 bottom-12 h-24 rounded-full bg-blue-500/10 blur-3xl" />
 
             <Image
-              src={asset("/images/hero-main.jpg")}
+              src={asset("/images/hero-main.webp")}
               alt="抽象的数学、物理与化学符号逐步转化为清晰的视觉概念"
-              width={1024}
-              height={559}
+              width={960}
+              height={524}
               priority
               className="relative z-10 h-auto w-full max-w-[780px] rounded-[2rem] border border-white/10 shadow-2xl shadow-black/40"
               sizes="(max-width: 1024px) 100vw, 58vw"
@@ -369,10 +369,10 @@ export default function Home() {
 
           <figure className="mt-14 overflow-hidden rounded-[2rem] border border-white/10 bg-white p-2 shadow-2xl shadow-black/25 sm:p-3">
             <Image
-              src={asset("/images/method-workflow.jpg")}
+              src={asset("/images/method-workflow.webp")}
               alt="Diagnose、Explain、Apply、Verify 四阶段概念学习流程"
-              width={1024}
-              height={559}
+              width={960}
+              height={524}
               className="h-auto w-full rounded-[1.5rem]"
               sizes="(max-width: 1280px) 100vw, 1200px"
             />

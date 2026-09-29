@@ -139,7 +139,7 @@ export default function Home() {
         notes || "无",
         "",
         `题目图片文件：${fileName}`,
-        "注意：请在Email开启后，手动把题目图片附加到邮件中。",
+        "注意：请在 Email 开启后，手动把题目图片附加到邮件中。",
       ].join("\n"),
     );
 
@@ -204,7 +204,7 @@ export default function Home() {
               面向全球华人的线上数理概念诊断
             </div>
 
-            <h1 className="type-hero max-w-3xl text-5xl sm:text-6xl lg:text-7xl">
+            <h1 className="type-hero max-w-3xl text-5xl sm:text-6xl lg:text-[68px]">
               把抽象概念，
               <span className="block text-cyan-300">
                 变成真正看得懂的知识。
@@ -212,9 +212,7 @@ export default function Home() {
             </h1>
 
             <p className="type-body-lg mt-8 max-w-2xl text-lg text-slate-300 sm:text-xl">
-              数学、物理与化学，不只是公式和符号。
-              通过图像、关系、类比与实际情境，把复杂概念一步一步拆开，
-              让你真正理解它为什么成立、什么时候使用。
+              数学、物理与化学，不只是公式和符号。通过图像、关系、类比与实际情境，把复杂概念一步一步拆开，让你真正理解它为什么成立、什么时候使用。
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -283,17 +281,12 @@ export default function Home() {
               </p>
 
               <h2 className="type-section-heading mt-5 text-4xl sm:text-5xl">
-                不是做题不够多，
-                <span className="block text-slate-400">
-                  而是前面的概念没有接上。
-                </span>
+                不是做题不够多，<span className="text-slate-400">而是前面的概念没有接上。</span>
               </h2>
             </div>
 
             <p className="type-body-lg max-w-2xl text-lg text-slate-400 lg:justify-self-end">
-              很多学生继续背公式、抄答案、重复刷题，
-              却没有找出自己究竟在哪一个理解步骤断掉。
-              时间花得越来越多，问题却一直留在那里。
+              很多学生继续背公式、抄答案、重复刷题，却没有找出自己究竟在哪一个理解步骤断掉。时间花得越来越多，问题却一直留在那里。
             </p>
           </div>
 
@@ -325,8 +318,7 @@ export default function Home() {
               </p>
 
               <p className="type-body mt-2 max-w-2xl text-slate-300">
-                先找出理解断点，再决定应该讲什么，
-                而不是把整章内容重新塞给你。
+                先找出理解断点，再决定应该讲什么，而不是把整章内容重新塞给你。
               </p>
             </div>
 
@@ -354,15 +346,11 @@ export default function Home() {
             </p>
 
             <h2 className="type-section-heading mt-5 text-4xl sm:text-5xl">
-              不是直接给答案，
-              <span className="block text-slate-400">
-                而是一步一步修复理解。
-              </span>
+              不是直接给答案，<span className="text-slate-400">而是一步一步修复理解。</span>
             </h2>
 
             <p className="type-body-lg mx-auto mt-7 max-w-2xl text-lg text-slate-400">
-              先找出真正的知识断点，再重新建立概念、应用到代表性问题，
-              最后确认学生能够独立理解与解决。
+              先找出真正的知识断点，再重新建立概念、应用到代表性问题，最后确认学生能够独立理解与解决。
             </p>
           </div>
 
@@ -381,8 +369,7 @@ export default function Home() {
           </figure>
 
           <p className="type-small mx-auto mt-6 max-w-3xl text-center text-sm text-slate-500">
-            通过 Diagnose → Explain → Apply → Verify 四个步骤，
-            把抽象概念转化为真正能够独立使用的理解。
+            通过 Diagnose → Explain → Apply → Verify 四个步骤，把抽象概念转化为真正能够独立使用的理解。
           </p>
 
           <div className="mt-16 grid gap-6 rounded-3xl border border-white/10 bg-white/[0.04] p-8 lg:grid-cols-[1fr_auto] lg:items-center lg:p-10">
@@ -396,8 +383,7 @@ export default function Home() {
               </h3>
 
               <p className="type-body mt-4 max-w-3xl text-slate-400">
-                你不需要为了一个概念重新报名长期课程。
-                可以只带着一个具体问题前来，完成诊断和修复。
+                你不需要为了一个概念重新报名长期课程。可以只带着一个具体问题前来，完成诊断和修复。
               </p>
             </div>
 
@@ -426,16 +412,12 @@ export default function Home() {
               </p>
 
               <h2 className="type-section-heading mt-5 text-4xl sm:text-5xl">
-                专注数理概念，
-                <span className="block text-slate-400">
-                  不受国家与考试体系限制。
-                </span>
+                专注数理概念，<span className="text-slate-400">不受国家与考试体系限制。</span>
               </h2>
             </div>
 
             <p className="type-body-lg max-w-2xl text-lg text-slate-400 lg:justify-self-end">
-              无论你来自中国、台湾、马来西亚、美国或其他地区，
-              只要需要使用中文理解数理概念，都可以预约线上辅导。
+              无论你来自中国、台湾、马来西亚、美国或其他地区，只要需要使用中文理解数理概念，都可以预约线上辅导。
             </p>
           </div>
 
@@ -570,10 +552,7 @@ export default function Home() {
             </p>
 
             <h2 className="type-section-heading mt-5 text-4xl sm:text-5xl">
-              先确认适不适合，
-              <span className="block text-slate-400">
-                再决定是否继续。
-              </span>
+              先确认适不适合，<span className="text-slate-400">再决定是否继续。</span>
             </h2>
           </div>
 
@@ -589,12 +568,11 @@ export default function Home() {
 
               <div className="mt-4 flex items-end gap-3">
                 <span className="type-price text-5xl">免费</span>
-                <span className="pb-1 text-slate-400">30分钟</span>
+                <span className="pb-1 text-slate-400">30 分钟</span>
               </div>
 
               <p className="type-body mt-6 text-slate-400">
-                每位新学生限一次。用于了解你的问题、
-                判断概念断点，并确认双方是否适合继续。
+                每位新学生限一次。用于了解你的问题、判断概念断点，并确认双方是否适合继续。
               </p>
             </article>
 
@@ -613,19 +591,17 @@ export default function Home() {
 
               <div className="mt-4 flex items-end gap-3">
                 <span className="type-price text-5xl">US$10</span>
-                <span className="pb-1 text-slate-300">／60分钟</span>
+                <span className="pb-1 text-slate-300">／60 分钟</span>
               </div>
 
               <p className="type-body mt-6 text-slate-300">
-                首20位付费学生适用。价格未来将根据服务经验、
-                学生反馈和需求调整。
+                首 20 位付费学生适用。价格未来将根据服务经验、学生反馈和需求调整。
               </p>
             </article>
           </div>
 
           <div className="type-small mt-10 text-center text-sm text-slate-500">
-            当前价格为试营运价格，不代表永久收费标准。
-            付款方式将在确认预约后通过Email说明。
+            当前价格为试营运价格，不代表永久收费标准。付款方式将在确认预约后通过 Email 说明。
           </div>
         </div>
       </section>
@@ -644,16 +620,11 @@ export default function Home() {
             </p>
 
             <h2 className="type-section-heading mt-5 text-4xl sm:text-5xl">
-              先告诉我，
-              <span className="block text-slate-400">
-                你究竟卡在哪里。
-              </span>
+              先告诉我，<span className="text-slate-400">你究竟卡在哪里。</span>
             </h2>
 
             <p className="type-body-lg mt-7 text-lg text-slate-400">
-              提交后会开启你的默认Email应用，
-              并自动整理预约资料。
-              你确认内容后即可发送。
+              提交后会开启你的默认 Email 应用，并自动整理预约资料。你确认内容后即可发送。
             </p>
 
             <div className="mt-10 rounded-3xl border border-white/10 bg-white/[0.04] p-6">
@@ -678,8 +649,7 @@ export default function Home() {
             </div>
 
             <div className="type-small mt-6 rounded-3xl border border-white/10 p-6 text-sm text-slate-500">
-              网站不会收集电话号码。你提供的Email只用于回应此次预约，
-              不会公开显示。
+              网站不会收集电话号码。你提供的 Email 只用于回应此次预约，不会公开显示。
             </div>
           </div>
 
@@ -817,7 +787,7 @@ export default function Home() {
                     </p>
 
                     <p className="type-small mt-1 text-xs text-slate-500">
-                      选择后，请在Email开启时手动附加该图片
+                      选择后，请在 Email 开启时手动附加该图片
                     </p>
                   </div>
                 </div>
@@ -849,7 +819,7 @@ export default function Home() {
               />
 
               <span>
-                我同意通过Email接收与此次概念诊断预约有关的回复。
+                我同意通过 Email 接收与此次概念诊断预约有关的回复。
               </span>
             </label>
 
@@ -858,12 +828,11 @@ export default function Home() {
               className="type-button mt-8 flex w-full items-center justify-center gap-3 rounded-full bg-cyan-300 px-7 py-4 text-slate-950 shadow-lg shadow-cyan-400/20 transition hover:-translate-y-0.5 hover:bg-cyan-200"
             >
               <Mail size={20} />
-              整理预约资料并开启Email
+              整理预约资料并开启 Email
             </button>
 
             <p className="type-small mt-4 text-center text-xs text-slate-600">
-              此版本不会把资料储存在网站服务器。
-              预约内容只会在你的Email应用中生成。
+              此版本不会把资料储存在网站服务器。预约内容只会在你的 Email 应用中生成。
             </p>
           </form>
         </div>

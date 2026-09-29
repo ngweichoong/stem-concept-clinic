@@ -6,7 +6,7 @@
 
   /* Unified Chinese typography system */
   --cjk-display-line: 1.18;
-  --cjk-heading-line: 1.24;
+  --cjk-heading-line: 1.26;
   --cjk-subheading-line: 1.36;
   --cjk-body-line: 1.72;
   --cjk-small-line: 1.62;
@@ -86,7 +86,7 @@ h4 {
 }
 
 .type-section-heading {
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   line-height: var(--cjk-heading-line) !important;
   letter-spacing: 0 !important;
   text-wrap: balance;
@@ -95,7 +95,7 @@ h4 {
 }
 
 .type-card-heading {
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   line-height: var(--cjk-subheading-line) !important;
   letter-spacing: 0 !important;
   line-break: strict;

@@ -3,12 +3,19 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Unified Chinese typography system */
+  --cjk-display-line: 1.16;
+  --cjk-heading-line: 1.24;
+  --cjk-subheading-line: 1.36;
+  --cjk-body-line: 1.72;
+  --cjk-small-line: 1.62;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-noto-sans-sc);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -19,19 +26,28 @@
   }
 }
 
+html {
+  font-synthesis: none;
+  text-size-adjust: 100%;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family:
+    var(--font-noto-sans-sc),
+    "Noto Sans SC",
+    "Source Han Sans SC",
     "PingFang SC",
     "Microsoft YaHei",
-    "Noto Sans CJK SC",
-    "Noto Sans SC",
     system-ui,
     sans-serif;
-  letter-spacing: normal;
-  line-height: 1.75;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: var(--cjk-body-line);
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-kerning: normal;
 }
 
 p,
@@ -40,13 +56,109 @@ label,
 input,
 textarea,
 select,
-button {
-  letter-spacing: normal;
+button,
+a {
+  letter-spacing: 0;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  letter-spacing: 0.005em;
+  letter-spacing: 0;
+  font-kerning: normal;
+}
+
+.type-hero {
+  font-weight: 600 !important;
+  line-height: var(--cjk-display-line) !important;
+  letter-spacing: -0.012em !important;
+  text-wrap: balance;
+  line-break: strict;
+  word-break: normal;
+}
+
+.type-section-heading {
+  font-weight: 600 !important;
+  line-height: var(--cjk-heading-line) !important;
+  letter-spacing: -0.008em !important;
+  text-wrap: balance;
+  line-break: strict;
+  word-break: normal;
+}
+
+.type-card-heading {
+  font-weight: 600 !important;
+  line-height: var(--cjk-subheading-line) !important;
+  letter-spacing: -0.004em !important;
+  line-break: strict;
+  word-break: normal;
+}
+
+.type-body-lg {
+  font-weight: 400 !important;
+  line-height: var(--cjk-body-line) !important;
+  letter-spacing: 0 !important;
+  line-break: strict;
+  word-break: normal;
+  text-wrap: pretty;
+}
+
+.type-body {
+  font-weight: 400 !important;
+  line-height: var(--cjk-body-line) !important;
+  letter-spacing: 0 !important;
+  line-break: strict;
+  word-break: normal;
+}
+
+.type-small {
+  font-weight: 400 !important;
+  line-height: var(--cjk-small-line) !important;
+  letter-spacing: 0 !important;
+  line-break: strict;
+  word-break: normal;
+}
+
+.type-eyebrow {
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+}
+
+.type-eyebrow-en {
+  font-weight: 600 !important;
+  line-height: 1.45 !important;
+  letter-spacing: 0.075em !important;
+}
+
+.type-ui {
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+}
+
+.type-button {
+  font-weight: 600 !important;
+  line-height: 1.45 !important;
+  letter-spacing: 0 !important;
+}
+
+.type-price {
+  font-weight: 600 !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.015em !important;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --cjk-display-line: 1.2;
+    --cjk-heading-line: 1.28;
+    --cjk-body-line: 1.76;
+  }
+
+  .type-hero,
+  .type-section-heading {
+    letter-spacing: 0 !important;
+  }
 }

@@ -161,17 +161,17 @@ export default function Home() {
             </span>
 
             <div>
-              <p className="font-bold tracking-tight">
+              <p className="type-ui text-base font-semibold">
                 STEM Concept Clinic
               </p>
 
-              <p className="text-xs text-slate-400">
+              <p className="type-small text-xs text-slate-400">
                 数理概念诊所
               </p>
             </div>
           </a>
 
-          <div className="hidden items-center gap-8 text-sm text-slate-300 md:flex">
+          <div className="type-ui hidden items-center gap-8 text-sm text-slate-300 md:flex">
             <a href="#problems" className="transition hover:text-white">
               学习问题
             </a>
@@ -191,7 +191,7 @@ export default function Home() {
 
           <a
             href="#booking"
-            className="rounded-full border border-white/20 bg-white/[0.06] px-5 py-2.5 text-sm font-semibold backdrop-blur-md transition hover:border-cyan-300/50 hover:bg-cyan-300 hover:text-slate-950"
+            className="type-button rounded-full border border-white/20 bg-white/[0.06] px-5 py-2.5 text-sm backdrop-blur-md transition hover:border-cyan-300/50 hover:bg-cyan-300 hover:text-slate-950"
           >
             预约诊断
           </a>
@@ -199,19 +199,19 @@ export default function Home() {
 
         <div className="relative z-10 mx-auto grid min-h-[calc(100vh-104px)] max-w-7xl items-center gap-12 px-6 pb-20 pt-8 lg:grid-cols-[0.88fr_1.12fr] lg:px-10 lg:pt-0">
           <div className="py-10 lg:py-16">
-            <div className="mb-7 inline-flex items-center gap-3 rounded-full border border-cyan-300/20 bg-cyan-300/[0.08] px-4 py-2 text-sm font-medium text-cyan-300 backdrop-blur-md">
+            <div className="type-eyebrow mb-7 inline-flex items-center gap-3 rounded-full border border-cyan-300/20 bg-cyan-300/[0.08] px-4 py-2 text-sm text-cyan-300 backdrop-blur-md">
               <Globe2 size={16} aria-hidden="true" />
               面向全球华人的线上数理概念诊断
             </div>
 
-            <h1 className="max-w-3xl text-5xl font-bold leading-[1.18] sm:text-6xl lg:text-7xl">
+            <h1 className="type-hero max-w-3xl text-5xl sm:text-6xl lg:text-7xl">
               把抽象概念，
               <span className="mt-3 block text-cyan-300">
                 变成真正看得懂的知识。
               </span>
             </h1>
 
-            <p className="mt-8 max-w-2xl text-lg leading-[1.8] text-slate-300 sm:text-xl">
+            <p className="type-body-lg mt-8 max-w-2xl text-lg text-slate-300 sm:text-xl">
               数学、物理与化学，不只是公式和符号。
               通过图像、关系、类比与实际情境，把复杂概念一步一步拆开，
               让你真正理解它为什么成立、什么时候使用。
@@ -220,20 +220,20 @@ export default function Home() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
                 href="#booking"
-                className="rounded-full bg-cyan-300 px-7 py-4 text-center font-bold text-slate-950 shadow-lg shadow-cyan-400/20 transition hover:-translate-y-0.5 hover:bg-cyan-200"
+                className="type-button rounded-full bg-cyan-300 px-7 py-4 text-center text-slate-950 shadow-lg shadow-cyan-400/20 transition hover:-translate-y-0.5 hover:bg-cyan-200"
               >
                 告诉我你卡在哪里
               </a>
 
               <a
                 href="#method"
-                className="rounded-full border border-white/15 bg-white/[0.04] px-7 py-4 text-center font-semibold transition hover:border-cyan-300/30 hover:bg-white/[0.08]"
+                className="type-button rounded-full border border-white/15 bg-white/[0.04] px-7 py-4 text-center transition hover:border-cyan-300/30 hover:bg-white/[0.08]"
               >
                 看概念如何被拆开
               </a>
             </div>
 
-            <div className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-400">
+            <div className="type-small mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-400">
               <span>数学</span>
               <span>进阶数学</span>
               <span>物理</span>
@@ -261,7 +261,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute bottom-7 left-1/2 z-20 hidden -translate-x-1/2 text-center text-xs text-slate-500 md:block">
+        <div className="type-small absolute bottom-7 left-1/2 z-20 hidden -translate-x-1/2 text-center text-xs text-slate-500 md:block">
           <span>从理解断点开始，而不是从整章重来</span>
           <div className="mx-auto mt-2 h-8 w-px bg-gradient-to-b from-cyan-300 to-transparent" />
         </div>
@@ -278,11 +278,11 @@ export default function Home() {
         <div className="relative mx-auto max-w-7xl">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-end">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.12em] text-cyan-300">
+              <p className="type-eyebrow text-sm text-cyan-300">
                 你真正卡住的地方
               </p>
 
-              <h2 className="mt-5 text-4xl font-bold leading-[1.24] sm:text-5xl">
+              <h2 className="type-section-heading mt-5 text-4xl sm:text-5xl">
                 不是做题不够多，
                 <span className="mt-2 block text-slate-400">
                   而是前面的概念没有接上。
@@ -290,7 +290,7 @@ export default function Home() {
               </h2>
             </div>
 
-            <p className="max-w-2xl text-lg leading-[1.8] text-slate-400 lg:justify-self-end">
+            <p className="type-body-lg max-w-2xl text-lg text-slate-400 lg:justify-self-end">
               很多学生继续背公式、抄答案、重复刷题，
               却没有找出自己究竟在哪一个理解步骤断掉。
               时间花得越来越多，问题却一直留在那里。
@@ -307,11 +307,11 @@ export default function Home() {
                   {problem.number}
                 </div>
 
-                <h3 className="mt-8 text-xl font-bold leading-[1.4]">
+                <h3 className="type-card-heading mt-8 text-xl">
                   {problem.title}
                 </h3>
 
-                <p className="mt-4 leading-[1.75] text-slate-400">
+                <p className="type-body mt-4 text-slate-400">
                   {problem.description}
                 </p>
               </article>
@@ -320,11 +320,11 @@ export default function Home() {
 
           <div className="mt-14 flex flex-col justify-between gap-6 rounded-3xl border border-cyan-300/20 bg-cyan-300/[0.06] p-7 sm:flex-row sm:items-center lg:p-9">
             <div>
-              <p className="font-semibold text-cyan-300">
+              <p className="type-eyebrow text-cyan-300">
                 概念诊断的第一步
               </p>
 
-              <p className="mt-2 max-w-2xl text-slate-300">
+              <p className="type-body mt-2 max-w-2xl text-slate-300">
                 先找出理解断点，再决定应该讲什么，
                 而不是把整章内容重新塞给你。
               </p>
@@ -332,7 +332,7 @@ export default function Home() {
 
             <a
               href="#method"
-              className="shrink-0 rounded-full bg-white px-6 py-3 text-center font-bold text-slate-950 transition hover:bg-cyan-200"
+              className="type-button shrink-0 rounded-full bg-white px-6 py-3 text-center text-slate-950 transition hover:bg-cyan-200"
             >
               看我们如何诊断
             </a>
@@ -349,18 +349,18 @@ export default function Home() {
 
         <div className="relative mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.12em] text-cyan-300">
+            <p className="type-eyebrow text-sm text-cyan-300">
               辅导方式
             </p>
 
-            <h2 className="mt-5 text-4xl font-bold leading-[1.24] sm:text-5xl">
+            <h2 className="type-section-heading mt-5 text-4xl sm:text-5xl">
               不是直接给答案，
               <span className="block text-slate-400">
                 而是一步一步修复理解。
               </span>
             </h2>
 
-            <p className="mx-auto mt-7 max-w-2xl text-lg leading-[1.8] text-slate-400">
+            <p className="type-body-lg mx-auto mt-7 max-w-2xl text-lg text-slate-400">
               先找出真正的知识断点，再重新建立概念、应用到代表性问题，
               最后确认学生能够独立理解与解决。
             </p>
@@ -380,22 +380,22 @@ export default function Home() {
             />
           </figure>
 
-          <p className="mx-auto mt-6 max-w-3xl text-center text-sm leading-[1.75] text-slate-500">
+          <p className="type-small mx-auto mt-6 max-w-3xl text-center text-sm text-slate-500">
             通过 Diagnose → Explain → Apply → Verify 四个步骤，
             把抽象概念转化为真正能够独立使用的理解。
           </p>
 
           <div className="mt-16 grid gap-6 rounded-3xl border border-white/10 bg-white/[0.04] p-8 lg:grid-cols-[1fr_auto] lg:items-center lg:p-10">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.12em] text-cyan-300">
+              <p className="type-eyebrow text-sm text-cyan-300">
                 这和普通补习有什么不同？
               </p>
 
-              <h3 className="mt-4 text-2xl font-bold leading-[1.35]">
+              <h3 className="type-card-heading mt-4 text-2xl">
                 普通补习跟着课程走，我们跟着你的理解断点走。
               </h3>
 
-              <p className="mt-4 max-w-3xl leading-[1.75] text-slate-400">
+              <p className="type-body mt-4 max-w-3xl text-slate-400">
                 你不需要为了一个概念重新报名长期课程。
                 可以只带着一个具体问题前来，完成诊断和修复。
               </p>
@@ -403,7 +403,7 @@ export default function Home() {
 
             <a
               href="#subjects"
-              className="rounded-full bg-cyan-300 px-7 py-4 text-center font-bold text-slate-950 transition hover:bg-cyan-200"
+              className="type-button rounded-full bg-cyan-300 px-7 py-4 text-center text-slate-950 transition hover:bg-cyan-200"
             >
               查看辅导范围
             </a>
@@ -421,11 +421,11 @@ export default function Home() {
         <div className="relative mx-auto max-w-7xl">
           <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.12em] text-cyan-300">
+              <p className="type-eyebrow text-sm text-cyan-300">
                 辅导范围
               </p>
 
-              <h2 className="mt-5 text-4xl font-bold leading-[1.24] sm:text-5xl">
+              <h2 className="type-section-heading mt-5 text-4xl sm:text-5xl">
                 专注数理概念，
                 <span className="mt-2 block text-slate-400">
                   不受国家与考试体系限制。
@@ -433,7 +433,7 @@ export default function Home() {
               </h2>
             </div>
 
-            <p className="max-w-2xl text-lg leading-[1.8] text-slate-400 lg:justify-self-end">
+            <p className="type-body-lg max-w-2xl text-lg text-slate-400 lg:justify-self-end">
               无论你来自中国、台湾、马来西亚、美国或其他地区，
               只要需要使用中文理解数理概念，都可以预约线上辅导。
             </p>
@@ -452,11 +452,11 @@ export default function Home() {
                     <Icon size={30} strokeWidth={1.7} aria-hidden="true" />
                   </div>
 
-                  <p className="mt-8 text-xs font-semibold tracking-[0.1em] text-cyan-300">
+                  <p className="type-eyebrow-en mt-8 text-xs text-cyan-300">
                     {subject.english}
                   </p>
 
-                  <h3 className="mt-3 text-2xl font-bold leading-[1.35]">
+                  <h3 className="type-card-heading mt-3 text-2xl">
                     {subject.title}
                   </h3>
 
@@ -464,7 +464,7 @@ export default function Home() {
                     {subject.topics.map((topic) => (
                       <li
                         key={topic}
-                        className="flex items-center gap-3 text-sm text-slate-400"
+                        className="type-small flex items-center gap-3 text-sm text-slate-400"
                       >
                         <span className="h-1.5 w-1.5 rounded-full bg-cyan-300" />
                         {topic}
@@ -484,11 +484,11 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <p className="text-sm font-semibold text-cyan-300">
+                  <p className="type-eyebrow-en text-sm text-cyan-300">
                     WHO THIS IS FOR
                   </p>
 
-                  <h3 className="mt-1 text-2xl font-bold leading-[1.35]">
+                  <h3 className="type-card-heading mt-1 text-2xl">
                     这种辅导适合谁？
                   </h3>
                 </div>
@@ -498,13 +498,13 @@ export default function Home() {
                 {suitableFor.map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-4 text-slate-300"
+                    className="type-body flex items-start gap-4 text-slate-300"
                   >
                     <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-cyan-300/15 text-cyan-300">
                       <Check size={15} strokeWidth={2.5} />
                     </span>
 
-                    <span className="leading-7">{item}</span>
+                    <span className="type-body">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -517,11 +517,11 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <p className="text-sm font-semibold text-slate-400">
+                  <p className="type-eyebrow-en text-sm text-slate-400">
                     SERVICE BOUNDARIES
                   </p>
 
-                  <h3 className="mt-1 text-2xl font-bold leading-[1.35]">
+                  <h3 className="type-card-heading mt-1 text-2xl">
                     这种辅导不适合谁？
                   </h3>
                 </div>
@@ -531,23 +531,23 @@ export default function Home() {
                 {notSuitableFor.map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-4 text-slate-400"
+                    className="type-body flex items-start gap-4 text-slate-400"
                   >
                     <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/5 text-slate-500">
                       <X size={15} strokeWidth={2.5} />
                     </span>
 
-                    <span className="leading-7">{item}</span>
+                    <span className="type-body">{item}</span>
                   </li>
                 ))}
               </ul>
 
               <div className="mt-8 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-                <p className="font-semibold text-white">
+                <p className="type-ui text-white">
                   讲解语言
                 </p>
 
-                <p className="mt-2 leading-[1.75] text-slate-400">
+                <p className="type-body mt-2 text-slate-400">
                   主要使用中文讲解，并保留必要的英文数理术语。
                 </p>
               </div>
@@ -565,11 +565,11 @@ export default function Home() {
 
         <div className="relative mx-auto max-w-5xl">
           <div className="text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.12em] text-cyan-300">
+            <p className="type-eyebrow text-sm text-cyan-300">
               收费方式
             </p>
 
-            <h2 className="mt-5 text-4xl font-bold leading-[1.24] sm:text-5xl">
+            <h2 className="type-section-heading mt-5 text-4xl sm:text-5xl">
               先确认适不适合，
               <span className="block text-slate-400">
                 再决定是否继续。
@@ -588,18 +588,18 @@ export default function Home() {
               </p>
 
               <div className="mt-4 flex items-end gap-3">
-                <span className="text-5xl font-bold">免费</span>
+                <span className="type-price text-5xl">免费</span>
                 <span className="pb-1 text-slate-400">30分钟</span>
               </div>
 
-              <p className="mt-6 leading-[1.75] text-slate-400">
+              <p className="type-body mt-6 text-slate-400">
                 每位新学生限一次。用于了解你的问题、
                 判断概念断点，并确认双方是否适合继续。
               </p>
             </article>
 
             <article className="relative overflow-hidden rounded-3xl border border-cyan-300/35 bg-cyan-300/[0.08] p-8 lg:p-10">
-              <div className="absolute right-0 top-0 rounded-bl-2xl bg-cyan-300 px-4 py-2 text-xs font-bold text-slate-950">
+              <div className="type-button absolute right-0 top-0 rounded-bl-2xl bg-cyan-300 px-4 py-2 text-xs text-slate-950">
                 创始试营运价
               </div>
 
@@ -612,18 +612,18 @@ export default function Home() {
               </p>
 
               <div className="mt-4 flex items-end gap-3">
-                <span className="text-5xl font-bold">US$10</span>
+                <span className="type-price text-5xl">US$10</span>
                 <span className="pb-1 text-slate-300">／60分钟</span>
               </div>
 
-              <p className="mt-6 leading-[1.75] text-slate-300">
+              <p className="type-body mt-6 text-slate-300">
                 首20位付费学生适用。价格未来将根据服务经验、
                 学生反馈和需求调整。
               </p>
             </article>
           </div>
 
-          <div className="mt-10 text-center text-sm leading-[1.75] text-slate-500">
+          <div className="type-small mt-10 text-center text-sm text-slate-500">
             当前价格为试营运价格，不代表永久收费标准。
             付款方式将在确认预约后通过Email说明。
           </div>
@@ -639,18 +639,18 @@ export default function Home() {
 
         <div className="relative mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.75fr_1.25fr]">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.12em] text-cyan-300">
+            <p className="type-eyebrow text-sm text-cyan-300">
               预约概念诊断
             </p>
 
-            <h2 className="mt-5 text-4xl font-bold leading-[1.24] sm:text-5xl">
+            <h2 className="type-section-heading mt-5 text-4xl sm:text-5xl">
               先告诉我，
               <span className="block text-slate-400">
                 你究竟卡在哪里。
               </span>
             </h2>
 
-            <p className="mt-7 text-lg leading-[1.8] text-slate-400">
+            <p className="type-body-lg mt-7 text-lg text-slate-400">
               提交后会开启你的默认Email应用，
               并自动整理预约资料。
               你确认内容后即可发送。
@@ -663,7 +663,7 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <p className="text-sm text-slate-500">
+                  <p className="type-small text-sm text-slate-500">
                     预约资料发送至
                   </p>
 
@@ -677,7 +677,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-6 rounded-3xl border border-white/10 p-6 text-sm leading-[1.75] text-slate-500">
+            <div className="type-small mt-6 rounded-3xl border border-white/10 p-6 text-sm text-slate-500">
               网站不会收集电话号码。你提供的Email只用于回应此次预约，
               不会公开显示。
             </div>
@@ -688,7 +688,7 @@ export default function Home() {
             className="rounded-3xl border border-white/10 bg-slate-900/70 p-7 shadow-2xl shadow-black/20 sm:p-9"
           >
             <div className="grid gap-6 sm:grid-cols-2">
-              <label className="text-sm font-medium text-slate-300">
+              <label className="type-ui text-sm text-slate-300">
                 姓名
                 <input
                   type="text"
@@ -699,7 +699,7 @@ export default function Home() {
                 />
               </label>
 
-              <label className="text-sm font-medium text-slate-300">
+              <label className="type-ui text-sm text-slate-300">
                 Email
                 <input
                   type="email"
@@ -710,7 +710,7 @@ export default function Home() {
                 />
               </label>
 
-              <label className="text-sm font-medium text-slate-300">
+              <label className="type-ui text-sm text-slate-300">
                 国家／地区
                 <input
                   type="text"
@@ -721,7 +721,7 @@ export default function Home() {
                 />
               </label>
 
-              <label className="text-sm font-medium text-slate-300">
+              <label className="type-ui text-sm text-slate-300">
                 时区
                 <input
                   type="text"
@@ -732,7 +732,7 @@ export default function Home() {
                 />
               </label>
 
-              <label className="text-sm font-medium text-slate-300">
+              <label className="type-ui text-sm text-slate-300">
                 科目
                 <select
                   name="subjectArea"
@@ -751,7 +751,7 @@ export default function Home() {
                 </select>
               </label>
 
-              <label className="text-sm font-medium text-slate-300">
+              <label className="type-ui text-sm text-slate-300">
                 学习程度
                 <select
                   name="level"
@@ -771,7 +771,7 @@ export default function Home() {
                 </select>
               </label>
 
-              <label className="text-sm font-medium text-slate-300">
+              <label className="type-ui text-sm text-slate-300">
                 希望预约日期
                 <input
                   type="date"
@@ -781,7 +781,7 @@ export default function Home() {
                 />
               </label>
 
-              <label className="text-sm font-medium text-slate-300">
+              <label className="type-ui text-sm text-slate-300">
                 希望预约时间
                 <input
                   type="time"
@@ -792,7 +792,7 @@ export default function Home() {
               </label>
             </div>
 
-            <label className="mt-6 block text-sm font-medium text-slate-300">
+            <label className="type-ui mt-6 block text-sm text-slate-300">
               你卡住的概念
               <textarea
                 name="concept"
@@ -803,7 +803,7 @@ export default function Home() {
               />
             </label>
 
-            <label className="mt-6 block text-sm font-medium text-slate-300">
+            <label className="type-ui mt-6 block text-sm text-slate-300">
               题目图片
               <div className="mt-2 rounded-2xl border border-dashed border-white/15 bg-slate-950/50 p-5 transition hover:border-cyan-300/40">
                 <div className="flex items-center gap-4">
@@ -812,11 +812,11 @@ export default function Home() {
                   </div>
 
                   <div>
-                    <p className="font-medium text-slate-300">
+                    <p className="type-ui text-slate-300">
                       选择题目图片
                     </p>
 
-                    <p className="mt-1 text-xs text-slate-500">
+                    <p className="type-small mt-1 text-xs text-slate-500">
                       选择后，请在Email开启时手动附加该图片
                     </p>
                   </div>
@@ -831,7 +831,7 @@ export default function Home() {
               </div>
             </label>
 
-            <label className="mt-6 block text-sm font-medium text-slate-300">
+            <label className="type-ui mt-6 block text-sm text-slate-300">
               补充说明
               <textarea
                 name="notes"
@@ -841,7 +841,7 @@ export default function Home() {
               />
             </label>
 
-            <label className="mt-6 flex items-start gap-3 text-sm leading-[1.7] text-slate-500">
+            <label className="type-small mt-6 flex items-start gap-3 text-sm text-slate-500">
               <input
                 type="checkbox"
                 required
@@ -855,13 +855,13 @@ export default function Home() {
 
             <button
               type="submit"
-              className="mt-8 flex w-full items-center justify-center gap-3 rounded-full bg-cyan-300 px-7 py-4 font-bold text-slate-950 shadow-lg shadow-cyan-400/20 transition hover:-translate-y-0.5 hover:bg-cyan-200"
+              className="type-button mt-8 flex w-full items-center justify-center gap-3 rounded-full bg-cyan-300 px-7 py-4 text-slate-950 shadow-lg shadow-cyan-400/20 transition hover:-translate-y-0.5 hover:bg-cyan-200"
             >
               <Mail size={20} />
               整理预约资料并开启Email
             </button>
 
-            <p className="mt-4 text-center text-xs leading-[1.65] text-slate-600">
+            <p className="type-small mt-4 text-center text-xs text-slate-600">
               此版本不会把资料储存在网站服务器。
               预约内容只会在你的Email应用中生成。
             </p>
@@ -871,7 +871,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="border-t border-white/10 bg-slate-950 px-6 py-10 lg:px-10">
-        <div className="mx-auto flex max-w-7xl flex-col gap-6 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+        <div className="type-small mx-auto flex max-w-7xl flex-col gap-6 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <p className="font-semibold text-white">
               STEM Concept Clinic

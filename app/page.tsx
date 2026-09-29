@@ -248,7 +248,11 @@ export default function Home() {
             <div className="absolute inset-x-8 bottom-12 h-24 rounded-full bg-blue-500/10 blur-3xl" />
 
             <img
-              src={asset("/images/hero-final.webp")}
+              src={asset("/images/hero.png")}
+              onError={(event) => {
+                event.currentTarget.onerror = null;
+                event.currentTarget.src = asset("/images/hero-final.webp");
+              }}
               alt="抽象的数学、物理与化学符号逐步转化为清晰的视觉概念"
               width={960}
               height={524}
@@ -364,7 +368,11 @@ export default function Home() {
 
           <figure className="mt-14 overflow-hidden rounded-[2rem] border border-white/10 bg-white p-2 shadow-2xl shadow-black/25 sm:p-3">
             <img
-              src={asset("/images/method-final.webp")}
+              src={asset("/images/method.png")}
+              onError={(event) => {
+                event.currentTarget.onerror = null;
+                event.currentTarget.src = asset("/images/method-final.webp");
+              }}
               alt="Diagnose、Explain、Apply、Verify 四阶段概念学习流程"
               width={960}
               height={524}

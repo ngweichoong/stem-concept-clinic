@@ -206,7 +206,7 @@ export default function Home() {
 
             <h1 className="type-hero max-w-3xl text-5xl sm:text-6xl lg:text-7xl">
               把抽象概念，
-              <span className="mt-3 block text-cyan-300">
+              <span className="block text-cyan-300">
                 变成真正看得懂的知识。
               </span>
             </h1>
@@ -284,7 +284,7 @@ export default function Home() {
 
               <h2 className="type-section-heading mt-5 text-4xl sm:text-5xl">
                 不是做题不够多，
-                <span className="mt-2 block text-slate-400">
+                <span className="block text-slate-400">
                   而是前面的概念没有接上。
                 </span>
               </h2>
@@ -427,7 +427,7 @@ export default function Home() {
 
               <h2 className="type-section-heading mt-5 text-4xl sm:text-5xl">
                 专注数理概念，
-                <span className="mt-2 block text-slate-400">
+                <span className="block text-slate-400">
                   不受国家与考试体系限制。
                 </span>
               </h2>
@@ -583,7 +583,7 @@ export default function Home() {
                 <Clock3 size={28} strokeWidth={1.8} />
               </div>
 
-              <p className="mt-8 text-sm font-semibold text-slate-400">
+              <p className="type-eyebrow mt-8 text-sm text-slate-400">
                 首次概念诊断
               </p>
 
@@ -607,7 +607,7 @@ export default function Home() {
                 <Sparkles size={28} strokeWidth={1.8} />
               </div>
 
-              <p className="mt-8 text-sm font-semibold text-cyan-300">
+              <p className="type-eyebrow mt-8 text-sm text-cyan-300">
                 一对一线上辅导
               </p>
 
@@ -669,7 +669,7 @@ export default function Home() {
 
                   <a
                     href="mailto:advasimo@icloud.com"
-                    className="font-semibold text-white hover:text-cyan-300"
+                    className="type-ui text-white hover:text-cyan-300"
                   >
                     advasimo@icloud.com
                   </a>
@@ -873,7 +873,7 @@ export default function Home() {
       <footer className="border-t border-white/10 bg-slate-950 px-6 py-10 lg:px-10">
         <div className="type-small mx-auto flex max-w-7xl flex-col gap-6 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="font-semibold text-white">
+            <p className="type-ui text-white">
               STEM Concept Clinic
             </p>
 

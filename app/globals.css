@@ -5,7 +5,7 @@
   --foreground: #171717;
 
   /* Unified Chinese typography system */
-  --cjk-display-line: 1.16;
+  --cjk-display-line: 1.18;
   --cjk-heading-line: 1.24;
   --cjk-subheading-line: 1.36;
   --cjk-body-line: 1.72;
@@ -61,6 +61,13 @@ a {
   letter-spacing: 0;
 }
 
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+}
+
 h1,
 h2,
 h3,
@@ -72,7 +79,7 @@ h4 {
 .type-hero {
   font-weight: 600 !important;
   line-height: var(--cjk-display-line) !important;
-  letter-spacing: -0.012em !important;
+  letter-spacing: 0 !important;
   text-wrap: balance;
   line-break: strict;
   word-break: normal;
@@ -81,7 +88,7 @@ h4 {
 .type-section-heading {
   font-weight: 600 !important;
   line-height: var(--cjk-heading-line) !important;
-  letter-spacing: -0.008em !important;
+  letter-spacing: 0 !important;
   text-wrap: balance;
   line-break: strict;
   word-break: normal;
@@ -90,7 +97,7 @@ h4 {
 .type-card-heading {
   font-weight: 600 !important;
   line-height: var(--cjk-subheading-line) !important;
-  letter-spacing: -0.004em !important;
+  letter-spacing: 0 !important;
   line-break: strict;
   word-break: normal;
 }
@@ -152,7 +159,7 @@ h4 {
 
 @media (max-width: 640px) {
   :root {
-    --cjk-display-line: 1.2;
+    --cjk-display-line: 1.22;
     --cjk-heading-line: 1.28;
     --cjk-body-line: 1.76;
   }
